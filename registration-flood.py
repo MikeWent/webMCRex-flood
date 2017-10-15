@@ -17,10 +17,10 @@ URL = input('URL: ')
 if URL == '' or URL[-1] == '/' or URL[0:4] != 'http':
     exit('IDIOT!')
 
-print('Set amount of threads. Recommended value is 4.')
-THREADS = input('Threads [4]: ')
+print('Set amount of threads. Recommended value is 10-20.')
+THREADS = input('Threads [10]: ')
 if THREADS == '':
-    THREADS = 4
+    THREADS = 10
 else:
     THREADS = int(THREADS)
 if THREADS < 1 or THREADS > 100:
